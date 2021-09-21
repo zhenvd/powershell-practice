@@ -15,10 +15,12 @@ Set-Location $PracticeRepoDir\powershell-github-practice
 
 #7. Add the new script file in the cloned directory to git staging
 git init
+git remote add origin https://github.com/$GitHubUsername/powershell-practice.git
+git branch -M main
 git add .
 
 #8. Commit the changes to the repo using the message variable ($CommitMessage)
 git commit -m "$CommitMessage"
 
 #9. Push the local git history back to your forked repo
-git push --all
+git push -u origin main
