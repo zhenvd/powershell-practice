@@ -21,4 +21,4 @@ git add .
 git commit -m "$CommitMessage"
 
 #9. Push the local git history back to your forked repo
-git push -all
+git push --all
